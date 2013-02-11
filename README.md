@@ -12,7 +12,9 @@
 разпространявана под лиценза
 [CC BY-SA 2.5 BG](http://creativecommons.org/licenses/by-sa/2.5/bg/)
 
-### Примерен запис
+### Примерни записи
+
+Стандартен случай:
 
 ```yaml
 term:
@@ -24,6 +26,15 @@ term:
   пример: Географски термини.
   справка: Koral EuroDict
 ```
+
+Съкращение:
+
+```yaml
+CSMA/CD:
+  препратка: carrier sense multiple access with collision detection
+```
+
+
 
 ### Уда̀рени букви
 
