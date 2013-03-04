@@ -91,6 +91,22 @@ task :sort do
   store_dictionary sorted_dictionary
 end
 
+desc 'Convert the dictionary to JSON'
+task :json do
+  require 'json'
+  dictionary = load_dictionary
+
+  groups = Hash.new { |hash, key| hash[key] = {} }
+
+  dictionary.each do |key, value|
+    groups[key[0..1].downcase][key] = value
+  end
+
+  groups.each do |group, entries|
+    File.open("#{group}.json", 'w') { |file| file.write entries.to_json }
+  end
+end
+
 def load_dictionary(file = 'dictionary.yml')
   print 'Loading dictionary... '
   dictionary = YAML.load_file file
