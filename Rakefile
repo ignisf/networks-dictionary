@@ -99,11 +99,31 @@ task :json do
   groups = Hash.new { |hash, key| hash[key] = {} }
 
   dictionary.each do |key, value|
-    groups[key[0..1].downcase][key] = value
+    group = key[0..1].downcase.gsub /[^a-zA-Z0-9]/, '_'
+    groups[group][key] = value
   end
 
   groups.each do |group, entries|
+    print  "Creating `#{group}.json'... "
     File.open("#{group}.json", 'w') { |file| file.write entries.to_json }
+    puts 'Done.'
+  end
+end
+
+desc 'List dictionary contributors'
+task :contributors do
+  system 'git shortlog -s -n'
+end
+
+desc 'List the bibliography references used in the dictionary'
+task :bibliography do
+  dictionary = load_dictionary
+  puts 'Extracting references...'
+  references = dictionary.map { |key, value| value['справка'] unless value.nil? or value['справка'].nil? }
+
+  puts 'References:'
+  references.uniq.compact.each do |reference|
+    puts '  ' + reference
   end
 end
 
