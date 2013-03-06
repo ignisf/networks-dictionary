@@ -32,7 +32,7 @@ task :with_missing, :field do |task, args|
   end
 
   print "Entries with missing field `#{args[:field]}': "
-  puts entries.keys.join ', '
+  puts entries.any? ? entries.keys.join(', ') : 'none'
 end
 
 desc 'List entries with translations without accent'
@@ -52,7 +52,7 @@ task :without_accent do
   end
 
   print 'Entries without accented translation: '
-  puts entries.keys.join ', '
+  puts entries.any? ? entries.keys.join(', ') : 'none'
 end
 
 desc 'Get a list of broken references'
@@ -124,6 +124,21 @@ task :bibliography do
   puts 'References:'
   references.uniq.compact.each do |reference|
     puts '  ' + reference
+  end
+end
+
+desc 'Search for an entry'
+task :search, :term do |task, args|
+  dictionary = load_dictionary
+  term = dictionary[args[:term]]
+
+  unless term.nil?
+    puts args[:term]
+    term.each do |key, value|
+      puts "  #{key}: #{value}"
+    end
+  else
+    puts 'Term not found.'
   end
 end
 
