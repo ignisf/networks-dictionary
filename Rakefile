@@ -80,15 +80,7 @@ end
 
 desc 'Sort the dictionary'
 task :sort do
-  dictionary = load_dictionary
-  sorted_dictionary = {}
-
-  puts 'Sorting...'
-  dictionary.sort_by { |key, value| key.downcase }.each do |key, value|
-    sorted_dictionary[key] = value
-  end
-
-  store_dictionary sorted_dictionary
+  store_dictionary sort_dictionary load_dictionary
 end
 
 desc 'Convert the dictionary to JSON'
@@ -140,6 +132,27 @@ task :search, :term do |task, args|
   else
     puts 'Term not found.'
   end
+end
+
+desc 'Add an untranslated term to the dictionary'
+task :add, :term do |task, args|
+  raise 'Term not specified' unless args[:term]
+  dictionary = load_dictionary
+  raise 'Term already exists' if dictionary.has_key? args[:term]
+  dictionary[args[:term]] = nil
+
+  store_dictionary sort_dictionary dictionary
+end
+
+def sort_dictionary(dictionary)
+  sorted_dictionary = {}
+
+  puts 'Sorting...'
+  dictionary.sort_by { |key, value| key.downcase }.each do |key, value|
+    sorted_dictionary[key] = value
+  end
+
+  sorted_dictionary
 end
 
 def load_dictionary(file = 'dictionary.yml')
