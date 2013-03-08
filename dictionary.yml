@@ -822,9 +822,11 @@ cyclical redundancy check:
     954-685-254-6.
 escaping:
   превод: екранѝране
+immutable: 
 marshalling:
   превод: арбитра̀ж
 passband: 
+persistent: 
 sliding window: 
 solitons: 
 triple DES:
@@ -834,4 +836,5 @@ triple DES:
     ключове за криптиране, докато DES използва само един.
   справка: Шиндър, Дебра Литълджон. Компютърни мрежи. София, Софтпрес, 2003. ISBN
     954-685-254-6.
-wave guide: 
+wave guide:
+  превод: вълново̀д
