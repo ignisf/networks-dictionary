@@ -111,21 +111,10 @@ desc 'List the bibliography references used in the dictionary'
 task :bibliography do
   dictionary = load_dictionary
   puts 'Extracting references...'
-  references = [] 
-  #references = dictionary.map { |key, value| value['справка'] unless value.nil? or value['справка'].nil? }
-  dictionary.each do |key, value|
-    unless value.nil?
-	  case value['справка']
-	  when String
-			  ref = value['справка']
-			  references << ref unless ref.nil?
-	  when Array
-			  value['справка'].each { |ref| references << ref unless ref.nil? }
-	  end
-	end
-  end
+  references = dictionary.map { |key, value| value['справка'] unless value.nil? }
+
   puts 'References:'
-  references.uniq.compact.each do |reference|
+  references.flatten.uniq.compact.each do |reference|
     puts '  ' + reference
   end
 end
