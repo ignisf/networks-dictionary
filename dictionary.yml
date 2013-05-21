@@ -835,7 +835,9 @@ escaping:
 FDD:
   препратка: Frequency division duplexing
 Fiber to the Home:
-  превод: Оптика до дома/Оптични линии до домашни абонати
+  превод: 
+  - Оптика до дома
+  - Оптични линии до домашни абонати
   значение: Концепция, при която последната миля (медният чифт) от най-близката централа
     до дома е заменена с оптично трасе.
   справка: InterActive Terminology for Europe
@@ -870,17 +872,27 @@ IP telephony:
   справка: InterActive Terminology for Europe
 ISDN:
   препратка: Integrated service digital network
-  справка: InterActive Terminology for Europe, БДС EN 300 267-1 V1.2.2:2003
+  справка:
+  - InterActive Terminology for Europe
+  - БДС EN 300 267-1 V1.2.2:2003
 ISDN BRA:
-  препратка: Basic rate access, Integrated service digital network
+  препратка:
+  - Basic rate access
+  - Integrated service digital network
   справка: InterActive Terminology for Europe
 ISDN PRA:
-  препратка: Primary rate access, Integrated service digital network
+  препратка:
+  - Primary rate access
+  - Integrated service digital network
   справка: InterActive Terminology for Europe
 ISDN(2B+D):
-  препратка: Basic rate access, Integrated service digital network
+  препратка:
+  - Basic rate access
+  - Integrated service digital network
 ISDN(30B+D):
-  препратка: Primary rate access, Integrated service digital network
+  препратка:
+  - Primary rate access
+  - Integrated service digital network
 marshalling:
   превод: арбитра̀ж
 Open systems interconnection:
@@ -890,8 +902,9 @@ Open systems interconnection:
     слоя, формиращи един комуникационен стек. Всеки слой изпълнява конкретни задачи,
     а също и услуги за по-горното ниво. Всяка двойка равноправни слоеве комуникира
     помежду си чрез стандартизиран набор от правила.
-  справка: 1. Атанасова, Т., Компютърни информационни системи, ИК «Кръг», Варна, 1999
-    г. 2. Монев, М., Информационни системи в бизнеса, УНСС, София, 1997 г.
+  справка: 
+  - Атанасова, Т., Компютърни информационни системи, ИК «Кръг», Варна, 1999 г. 
+  - Монев, М., Информационни системи в бизнеса, УНСС, София, 1997 г.
 OSI:
   препратка: Open systems interconnection
 passband: 
@@ -947,8 +960,11 @@ Voice over IP:
     пакети от данни. Терминът може да се отнася до връзка между два компютъра, два
     телефонни апарата или компютър и телефонен апарат, стига сигналът да се пренася
     в част от пътя си чрез IP пакети.
-  справка: InterActive Terminology for Europe, Orbitel речник на термините
-  препратка: IP
+  справка:
+  - InterActive Terminology for Europe
+  - Orbitel речник на термините
+  препратка: Internet Protocol
+>>>>>>> Stashed changes
 VoIP:
   препратка: Voice over IP
   справка: InterActive Terminology for Europe
