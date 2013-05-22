@@ -1213,34 +1213,34 @@ marshalling:
   превод: арбитра̀ж
 net:
   превод: мрежа
-  източник: http://lml.bas.bg/~anton/linux/rechnik.html
+  справка: http://lml.bas.bg/~anton/linux/rechnik.html
 offline:
   превод: без връзка с мрежа
-  източник: http://lml.bas.bg/~anton/linux/rechnik.html
+  справка: http://lml.bas.bg/~anton/linux/rechnik.html
 passband: 
 password:
   превод: парола
-  източник: http://lml.bas.bg/~anton/linux/rechnik.html
+  справка: http://lml.bas.bg/~anton/linux/rechnik.html
 persistent: 
 protocol:
   превод: протокол
   значение: Международно споразумение с по-малко формална сила от договора.
-  справка: Glosbe
+  справка: Glosbe dictionary
 proxy:
   превод: прокси
   значение: Услуга, процес или файл, която позволява на компютър да служи като интерфейс между отдалечена машина и Интернет.
-  източник: Glosbe
+  справка: Glosbe dictionary
 server:
   превод: сървър
-  източник: http://lml.bas.bg/~anton/linux/rechnik.html
+  справка: http://lml.bas.bg/~anton/linux/rechnik.html
 state machine:
   превод: устройство за състояние  
-  източник: Glosbe
+  справка: Glosbe dictionary
 sliding window: 
 solitons: 
 subnet:
   превод: подмрежа
-  източник: http://lml.bas.bg/~anton/linux/rechnik.html
+  справка: http://lml.bas.bg/~anton/linux/rechnik.html
 triple DES:
   превод: тро̀ен DES
   значение: Силна форма на алгоритъма Data Encryption Standard (стандарт за криптиране
