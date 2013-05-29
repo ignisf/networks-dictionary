@@ -463,6 +463,9 @@ broadcast storm:
   препратка: broadcast
   справка: Шиндър, Дебра Литълджон. Компютърни мрежи. София, Софтпрес, 2003. ISBN
     954-685-254-6.
+buffer:
+  превод: буфер
+  справка: http://lml.bas.bg/~anton/linux/rechnik.html
 bus topology:
   превод: шѝнна тополо̀гия
   значение: Линейна LAN архитектура, в която предаванията от мрежовите станции се
@@ -743,6 +746,9 @@ congestion:
   значение: Трафик, превишаващ капацитета на мрежата.
   справка: Шиндър, Дебра Литълджон. Компютърни мрежи. София, Софтпрес, 2003. ISBN
     954-685-254-6.
+connection:
+  превод: връзка; свързване
+  справка: http://lml.bas.bg/~anton/linux/rechnik.html
 connection-oriented protocol:
   превод: връ̀зково-ориентѝран протоко̀л
   значение: Протокол, който изисква да бъде установена връзка между изпращащия и приемащия
@@ -826,8 +832,14 @@ cyclical redundancy check:
     като се използват математически изчисления.
   справка: Шиндър, Дебра Литълджон. Компютърни мрежи. София, Софтпрес, 2003. ISBN
     954-685-254-6.
+disconnect:
+  превод: 1) изключвам (се); 2) прекъсвам (напр. линията)
+  справка: http://lml.bas.bg/~anton/linux/rechnik.html
 escaping:
   превод: екранѝране
+expire:
+  превод: изтичам (за срок); ~d с изтекъл срок, остарял; ~s at валиден до
+  справка: http://lml.bas.bg/~anton/linux/rechnik.html
 FDD:
   препратка: Frequency division duplexing
 Fiber to the Home:
@@ -906,6 +918,15 @@ ISDN(30B+D):
   - Integrated service digital network
 marshalling:
   превод: арбитра̀ж
+net:
+  превод: мрежа
+  справка: http://lml.bas.bg/~anton/linux/rechnik.html
+node:
+  превод: възел
+  справка: http://lml.bas.bg/~anton/linux/rechnik.html
+offline:
+  превод: без връзка с мрежа
+  справка: http://lml.bas.bg/~anton/linux/rechnik.html
 Open Systems Interconnection:
   превод: свъ̀рзване на отво̀рени систѐми
   значение: Модел за свързване на отворени системи, публикуван през 1978 г. като стандарт
@@ -918,7 +939,10 @@ Open Systems Interconnection:
   - Монев, М., Информационни системи в бизнеса, УНСС, София, 1997 г.
 OSI:
   препратка: Open Systems Interconnection
-passband: 
+passband:
+password:
+  превод: парола
+  справка: http://lml.bas.bg/~anton/linux/rechnik.html
 persistent: 
 Primary Rate Access:
   превод: първѝчен до̀стъп
@@ -927,6 +951,14 @@ Primary Rate Access:
     и един канал за сигнализация (D-канал) със скорост 64 kbit/s.
   препратка: Integrated service digital network
   справка: InterActive Terminology for Europe
+protocol:
+  превод: протокол
+  значение: Международно споразумение с по-малко формална сила от договора.
+  справка: Glosbe dictionary
+proxy:
+  превод: прокси
+  значение: Услуга, процес или фаѝл, която позволява на компютър да служи като интерфеѝс между отдалечена машина и Интернет.
+  справка: Glosbe dictionary
 radio frequency identification:
   превод: ра̀диочестотна идентифика̀ция
   значение: Използването на електромагнитни вълни или индуктивна връзка в радиочестотната
@@ -936,6 +968,15 @@ radio frequency identification:
   справка: Препоръка на комисията от 12 май 2009 година относно спазването на принципите
     за неприкосновеност на личния живот и защита на данните в приложения, използващи
     радиочестотна идентификация. 32009H0387/bg
+recipient:
+  превод: получател
+  справка: http://lml.bas.bg/~anton/linux/rechnik.html
+reject:
+  превод: отхвърлям
+  справка: http://lml.bas.bg/~anton/linux/rechnik.html
+relay:
+  превод: препредавам
+  справка: http://lml.bas.bg/~anton/linux/rechnik.html
 RFID:
   препратка: Radio frequency identification
 routing number:
@@ -946,8 +987,17 @@ routing number:
   - InterActive Terminology for Europe
   - Комисия за регулиране на съобщенията. Технически анализ на въвеждане на преносимост
     на номерата и определяне на приложимите стандарти
+server:
+  превод: сървър
+  справка: http://lml.bas.bg/~anton/linux/rechnik.html
+state machine:
+  превод: устроѝство за състояние  
+  справка: Glosbe dictionary
 sliding window: 
-solitons: 
+solitons:
+subnet:
+  превод: подмрежа
+  справка: http://lml.bas.bg/~anton/linux/rechnik.html 
 time division duplexing:
   превод: ду̀плекс с раздѐляне по̀ врѐме
   значение: Режим за комуникация, при който за възходящия и низходящия тракт се използват
